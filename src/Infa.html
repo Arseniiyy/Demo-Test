@@ -1,0 +1,171 @@
+Задание 1.
+Наследование.Teacher наследуется от Person.Student наследуется от Person.
+
+Class - композиция,строгая агригация.
+
+-Кодификатор доступа
++Паблик
+
+a.верно
+b.есть наследование.Неверно
+c.является базовым классом.Неверно
+d.верно
+
+Ответ:a,d
+
+Задание 2.
+class Archer extends Combat {
+private int distance;
+private double bow;
+public void attack() {
+
+}
+}
+
+Задание 3.
+a.неверно
+b.верно
+с.верно
+d.верно
+e.неверно
+f.неверно
+
+Задание 4.
+FileReader in = new FileReader("notfound");
+
+Что передается в конструктор FileReader?
+экземпляр класса FileReader
+ctrp+p показыввает конструкторы в проэкте
+
+Как еще можно сделать это задание?
+throw new FileNotFoundException();
+
+Задание 5.
+"INFO"-тэг по которому ищем
+"info" - сообщение
+i-вид логирования
+
+Log.i("INFO", "info");
+
+Задание 6.
+public static int getDiscont(int newPrice, int price)throws ArithmeticException{
+
+return 100*(1-newPrice/price);
+
+}
+
+throws ArithmeticException - исключение
+
+Задание 7.
+
+void test() throws IOException {
+PrintWriter writer = new PrintWriter(new PrintWriter("Hi.txt"));
+writer.print("Hi");
+writer.flush();
+writer.close();
+}
+
+import java.io. File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public void Main {
+public static void main(String[]){
+try {
+test();
+} catch (IOException e) {
+throw new RuntimeException(e);
+}
+}
+static void test() throws IOException {
+PrintWriter writer = new PrintWriter(new PrintWriter("Hi.txt"));
+writer.print("Hi");
+writer.flush();
+writer.close();
+}
+}
+
+Создается файл Hi.txt с содержимым «Hi».
+Отвтет: c
+
+Задание 8.
+public int wordCount(String fileName) {
+int count = 0;
+try{
+Scanner  sc = new Scanner(new File(fileName));
+while (sc.hasNext()){
+sc.next();
+count++;
+}
+}   catch (Exception e){
+
+}
+return count;
+}
+
+Задание 9.
+Вызывается, когда набор компонентов удаляется из фрагмента	Ответ 1 Вопрос 9
+onDestroyView()
+Вызывается, когда фрагмент отвязывается от активности	Ответ 2 Вопрос 9
+onDetach()
+Фрагмент становится не видим пользователю	Ответ 3 Вопрос 9
+onStop()
+Вызывается перед тем, как фрагмент будет уничтожен системой	Ответ 4 Вопрос 9
+onDestroy()
+Пользователь не может взаимодействовать с фрагментом, но часть фрагмента видима пользователю	Ответ 5 Вопрос 9
+onPause()
+
+Задание 10.
+
+
+Внешний класс должен быть объявлен с модификатором доступа publicю\ неверно
+Внутренний класс должен расширять внешний.Внутренний класс статический\неверно
+Внутренний класс должен быть объявлен перед методом main().\неверно
+Не создан экземпляр внешнего класса до вызова конструктора внутреннего класса.верно(тут ошибка)
+
+Задание 11.
+TextView textView = findViewById(R.id.textView);
+Handler handler = new Handler();
+final
+Runnable r =
+new
+Runnable() {
+public
+void
+
+run
+() {
+
+textView
+.append("Hello");
+handler.
+postDelayed
+(this, 2000);
+}
+};
+handler
+.postDelayed(r, 2000);
+
+Задание 12.
+
+уведомить потоки,ожидающих на мониторе - notify
+запустить поток на выполнение - start
+приостановить поток на указанное время- sleep
+приостановить текущий поток до завершения указанного потока - join
+
+Здание 13.
+class Answer extends Thread {
+public void run() {
+for (int i = 0; i < 10; i++){
+System.out.print(i);
+try {
+Thread.sleep(50);
+} catch(Exception e) {
+
+}
+}
+}
+}
+
+Задание 14.
